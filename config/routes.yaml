@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+blog:
+     resource: '../src/Blog/Resources/routing/'
+     type: directory

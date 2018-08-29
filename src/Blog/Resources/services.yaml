@@ -1,0 +1,4 @@
+services:
+    App\Blog\Infraestructure\Repository\InMemoryEntryRepository: ~
+    App\Blog\Infraestructure\Repository\IEntryRepository: '@App\Blog\Infraestructure\Repository\InMemoryEntryRepository'
+        

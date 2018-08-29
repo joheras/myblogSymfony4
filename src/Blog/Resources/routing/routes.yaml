@@ -1,0 +1,3 @@
+show_entries:
+    path: /entries
+    controller: App\Blog\Application\Controller\EntryController:showAll
