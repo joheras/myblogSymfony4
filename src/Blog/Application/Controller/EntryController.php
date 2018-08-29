@@ -18,4 +18,10 @@ class EntryController
         $entries = $this -> entryrepository -> findAll();
                  return new Response(implode("<br/>", $entries));
     }
+    
+    public function showByID($id)
+    {
+        $entry = $this -> entryrepository ->findEntryByID($id);
+                 return new Response( $entry);
+    }
 }

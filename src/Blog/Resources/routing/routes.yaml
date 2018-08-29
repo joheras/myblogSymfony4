@@ -1,3 +1,7 @@
 show_entries:
     path: /entries
     controller: App\Blog\Application\Controller\EntryController:showAll
+
+show_entry: 
+    path: /entry/{id}
+    controller: App\Blog\Application\Controller\EntryController:showByID
