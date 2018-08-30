@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %} Welcome {% endblock %}. </title>
+        <title>{% block title %} Welcome {% endblock %} </title>
         {% block stylesheets %}
             <link href="{{ asset('css/normalizar.css') }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('css/comun.css') }}" rel="stylesheet" type="text/css"/>
@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="{{ path('show_entries') }}">Home</a></li>
+                    <li><a href="{{ path('welcome') }}">Home</a></li>
                     <li><a href="#">New entry</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
