@@ -1,0 +1,12 @@
+{% extends '@blog/base.html.twig' %}
+
+{# Definimos los bloques #}
+{# El bloque del título #}
+{% block title %} Bienvenido {% endblock %}
+
+
+{# El bloque del cuerpo #}
+{% block content %}
+    Bienvenido a mi blog. Visita las entradas en el siguiente <a href="{{ path('show_entries') }}">enlace</a>.
+<br/><br/>
+{% endblock %}

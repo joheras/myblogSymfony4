@@ -1,0 +1,5 @@
+twig:
+    paths: 
+        'src/Blog/Resources/views' : 'blog'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'

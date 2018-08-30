@@ -1,0 +1,25 @@
+{# Extendemos la plantilla base #}
+{% extends '@blog/base.html.twig' %}
+
+{# Definimos los bloques #}
+{# El bloque del título #}
+{% block title %} Entries {% endblock %}
+
+{# Por el momento no usamos el bloque de las hojas de estilo #}
+
+{# El bloque del cuerpo #}
+{% block content %}
+<ul>
+{# La plantilla recibirá como entrada una variable entries, un array de entradas que iremos mostrando #}
+	{% for entry in entries %}
+	<li>
+          {# recorremos el vector y vamos accediendo a las distintas componentes de cada
+             entrada #}
+          Title: {{ entry.title }}. Body: {{ entry.text }}. 
+          {# definimos un enlace que nos muestra la página de cada entrada individual #}
+          <a href="{{ path('show_entry',{'id': entry.id}) }}">Link</a>
+       </li>
+	{% endfor %}
+</ul>
+
+{% endblock %}
