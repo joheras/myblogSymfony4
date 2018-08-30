@@ -20,4 +20,10 @@ class EntryController
         $entries = $this -> entryrepository -> findAll();
         return new Response($this->twig->render("@blog/entradas.html.twig",array('entries'=> $entries)));
     }
+    
+    public function showByID($id)
+    {
+        $entries[] = $this -> entryrepository ->findEntryByID($id);
+        return new Response($this->twig->render("@blog/entradas.html.twig",array('entries'=> $entries)));
+    }
 }
