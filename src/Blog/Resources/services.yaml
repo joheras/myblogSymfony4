@@ -1,4 +1,5 @@
 services:
-    App\Blog\Infraestructure\Repository\InMemoryEntryRepository: ~
-    App\Blog\Infraestructure\Repository\IEntryRepository: '@App\Blog\Infraestructure\Repository\InMemoryEntryRepository'
+    App\Blog\Infrastructure\Repository\InMemoryEntryRepository: ~
+    App\Blog\Infrastructure\Repository\DoctrineEntryRepository: ~
+    App\Blog\Domain\Repository\IEntryRepository: '@App\Blog\Infrastructure\Repository\DoctrineEntryRepository'
         
